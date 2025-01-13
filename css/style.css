@@ -99,3 +99,39 @@ input::placeholder{
   padding: 3px;
 }
 
+.google-button,
+.facebook-button{
+  position: relative;
+}
+
+
+.google-icon{
+  position: absolute;
+  bottom: 10px;
+  left: 69px;
+}
+
+.facebook-icon{
+  position: absolute;
+  bottom: 11px;
+  left: 65px;
+}
+
+.continue-with-google,
+.continue-with-facebook{
+  position: absolute;
+  font-size: 13px ;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+
+.continue-with-google {
+  bottom: 11px;
+  left: 98px;
+}
+
+.continue-with-facebook{
+  bottom: 12px;
+  left: 88px;
+}
