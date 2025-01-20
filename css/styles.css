@@ -17,6 +17,10 @@ header nav ul{
   gap: 50px;
 }
 
+header nav ul li{
+  position: relative;
+}
+
 .container{
   max-width: 1200px;
   margin: auto;
@@ -31,15 +35,8 @@ header nav ul{
 }
 
 
-.home-text{
- font-weight: 700;
-}
-
-.home-text{
-  position: relative;
-}
-
-.home-text::after{
+.home-text:hover::after{
+  font-weight: 700;
   position: absolute;
   content: '';
   width: 100%;
