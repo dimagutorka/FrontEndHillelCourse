@@ -46,8 +46,34 @@ body{
 
 .container{
   padding-top: 170px;
+  max-width: 1200;
   display: flex;
+  margin: auto;
+
 }
+
+.left-container{
+  margin-left: 135px;
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+}
+
+.right-container{
+  max-width: 840px;
+
+}
+
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-container li{
+  display: inline;
+}
+
 
 .items-container{
   display: flex;
@@ -70,17 +96,8 @@ body{
   color: black;
 }
 
-
-.aside-container{
-  margin-left: 135px;
-  background-color: #FBFBFB;
-  display: flex;
-  flex-direction: column;
-  width: 310px;
-}
-
 .aside-container ul{
-  margin-bottom: 380px;
+  background-color: #FBFBFB;
 }
 
 .text-categories{
@@ -108,5 +125,5 @@ line-height: 16px;
 .categories-list li:hover{
   color: #46A358;
   font-weight: 700;
-
 }
+  
