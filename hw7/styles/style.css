@@ -34,117 +34,79 @@
   font-style: normal;
 }
 
-body{
-font-family: cera_proregular, sans-serif;
-} 
-
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header{
-  padding-top: 30px;
-  margin-bottom: 12px;
+body{
+  font-family: cera_proregular, sans-serif;
 }
 
-header nav ul{
+.container{
+  padding-top: 170px;
   display: flex;
-  align-items: center;
-  gap: 50px;
 }
 
-header nav ul li{
-  position: relative;
-}
-
-.header-container{
-  max-width: 1200px;
-  margin: auto;
+.items-container{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #46A35880;
-  padding-bottom: 18px;
- }
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
- .main-container{
-  background-color: #F5F5F580;
+.items-container article{
   display: flex;
-  max-width: 1200px;
-  margin: auto;
-  align-items: center;
+  flex-flow: column wrap;
 }
 
-.content-container{
-  margin-left: 40px;
+.items-container img{
+  width: 250px;
+  height: 250px;
 }
 
-.images-container{
-  position: relative;
-}
-
-.home-text:hover::after{
-  font-weight: 700;
-  position: absolute;
-  content: '';
-  width: 100%;
-  border-bottom: 3px solid #46A358;
-  right: 0px;
-  top: 43px
-}
-
-.login-button{
-  padding: 7px 17px;
-  background-color: #46A358;
+.items-container a {
   text-decoration: none;
-  border-radius: 6px;
-  color: white;
+  color: black;
+}
+
+
+.aside-container{
+  margin-left: 135px;
+  background-color: #FBFBFB;
   display: flex;
-  align-items: center;
-  font-family: cera_promedium;
+  flex-direction: column;
+  width: 310px;
 }
 
-.login-button svg{
-  margin-right: 4px;
+.aside-container ul{
+  margin-bottom: 380px;
 }
 
-.wlc-to-grnshp{
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 7px;
-  font-family: cera_promedium;
+.text-categories{
+margin-bottom: 7px;
+padding-left: 18px;
+padding-top: 14px;
+font-size: 18px;
+line-height: 16px;
 }
 
-.main-text{
-  font-weight: 900;
-  font-size: 70px;
-  line-height: 70px;
-  font-family: cera_problack;
-  margin-bottom: 5px;
-}
-
-.main-text span{
+.item-price{
   color: #46A358;
 }
 
-.under-main-text{
-  line-height: 24px;
-  margin-bottom: 44px;
+.categories-list{
+  padding-left: 30px;
 }
 
-.shop-now-button{
-  font-family: cera_promedium;
-  background-color: #46A358;
-  text-decoration: none;
-  border-radius: 6px;
-  color: white;
-  padding: 10px 27px;
+.categories-list li{
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: 400;
 }
 
-.small-plant-img{
-  position: absolute;
-  top: 300px; 
-  left: 30px; 
+.categories-list li:hover{
+  color: #46A358;
+  font-weight: 700;
+
 }
