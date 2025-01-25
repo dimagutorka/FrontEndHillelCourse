@@ -44,29 +44,29 @@ font-family: cera_proregular, sans-serif;
   box-sizing: border-box;
 }
 
-header{
+.main-header{
   padding-top: 30px;
   margin-bottom: 12px;
 }
 
-header nav ul{
+.main-header nav ul{
   display: flex;
   align-items: center;
   gap: 50px;
 }
 
-header nav ul li{
+.main-header nav ul li{
   position: relative;
 }
 
 .header-container{
   max-width: 1200px;
+  padding-bottom: 18px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #46A35880;
-  padding-bottom: 18px;
  }
 
  .main-container{
@@ -79,10 +79,6 @@ header nav ul li{
 
 .content-container{
   margin-left: 40px;
-}
-
-.images-container{
-  position: relative;
 }
 
 .home-text:hover::after{
@@ -141,10 +137,4 @@ header nav ul li{
   border-radius: 6px;
   color: white;
   padding: 10px 27px;
-}
-
-.small-plant-img{
-  position: absolute;
-  top: 300px; 
-  left: 30px; 
 }
