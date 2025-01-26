@@ -41,7 +41,7 @@
 }
 
 body{
-  font-family: cera_proregular, sans-serif;
+  font-family: 'cera_proregular', sans-serif;
 }
 
 .container{
@@ -123,11 +123,11 @@ line-height: 16px;
 }
 
 .text-categories{
-margin-bottom: 7px;
-padding-left: 18px;
-padding-top: 14px;
-font-size: 18px;
-line-height: 16px;
+  margin-bottom: 7px;
+  padding-left: 18px;
+  padding-top: 14px;
+  font-size: 18px;
+  line-height: 16px;
 }
 
 .item-price{
