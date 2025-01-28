@@ -53,5 +53,128 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box}
+
+a {
+  text-decoration: none;
 }
+
+.central-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.banner-section{
+  margin-bottom: 45px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgb(70, 163, 88, 0.5);
+  padding-bottom: 18px;
+}
+
+.header-wrapper ul{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px;
+}
+
+.login-button{
+  padding: 8px 18px;
+  background-color: #46A358;
+  color: white;
+  border-radius: 6px;
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+  font-family: "cera_promedium";
+  line-height: 20px;
+
+}
+
+.header-wrapper ul li a{
+  color: #3D3D3D;
+  line-height: 20px;
+  font-family: "cera_proregular";
+  position: relative;
+
+}
+
+.header-wrapper ul li a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -27px;
+  height: 3px;
+  width: 0;
+  background-color: #46A358;
+  transition: width 0.3s ease-in-out;
+}
+
+.header-wrapper ul li a:hover::after{
+  width: 100%;
+}
+
+.banner-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F5F5F580;
+}
+
+.inner-content-wrapper{
+  padding-top: 68px;
+  margin-left: 40px;
+}
+
+.wlc-text{
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-family: "cera_promedium";
+  color: #3D3D3D;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.site-motto-text {
+    margin-bottom: 5px;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 70px;
+    color: #3D3D3D;
+    font-family: "cera_problack";
+    text-transform: uppercase;
+
+}
+
+.site-motto-text span {
+  color: #46A358;
+}
+
+.under-motto-text{
+  margin-bottom: 44px;
+  line-height: 24px;
+  color: #727272;
+  font-size: 14px;
+  font-family: "cera_proregular";
+
+}
+
+.shop-now-button{
+  padding: 10px 27px;
+  background-color: #46A358;
+  color: white;
+  font-family: "cera_probold";
+  line-height: 20px;
+  font-weight:700;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+
+/* ITEMS (PLANTS) SECTION  */
+
