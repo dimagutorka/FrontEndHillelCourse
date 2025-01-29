@@ -209,12 +209,20 @@ a {
   margin-bottom: 8px;
 }
 
+.sidebar-cetegories ul li:hover {
+  cursor: pointer;
+  color: #46a358;
+  font-weight: 700;
+  font-family: "cera_probold";
+}
+
 .sidebar-cetegories ul {
   font-size: 15px;
   line-height: 40px;
-  font-family: "cera_proregular";
   color: #3d3d3d;
   padding-left: 30px;
+  font-family: "cera_proregular";
+
 }
 
 .plant-cards-container {
@@ -239,6 +247,30 @@ a {
 .plant-cards-navbar ul {
   column-gap: 37px;
   line-height: 16px;
+}
+
+.plant-cards-navbar ul li:hover {
+  position: relative;
+  cursor: pointer;
+  color: #46a358;
+  font-weight: 700;
+  font-family: "cera_probold";
+  
+}
+
+.plant-cards-navbar ul li::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -7px;
+  height: 3px;
+  width: 0px;
+  background-color: #46a358;
+  transition: width 0.3s ease-in-out;
+}
+
+.plant-cards-navbar ul li:hover::after {
+  width: 100%;
 }
 
 .plant-cards-navbar .short-by {
@@ -270,7 +302,6 @@ a {
   column-gap: 10px;
 }
 
-
 .item-cards-pagination li{
   display: flex;
   justify-content: center;
@@ -297,5 +328,5 @@ path{
 }
 
 .item-cards-pagination li:hover path {
-  stroke: white; /* Change the stroke color of the SVG inside li */
+  stroke: white; 
 }
