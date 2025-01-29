@@ -222,7 +222,6 @@ a {
   color: #3d3d3d;
   padding-left: 30px;
   font-family: "cera_proregular";
-
 }
 
 .plant-cards-container {
@@ -255,7 +254,6 @@ a {
   color: #46a358;
   font-weight: 700;
   font-family: "cera_probold";
-  
 }
 
 .plant-cards-navbar ul li::after {
@@ -300,6 +298,7 @@ a {
   justify-content: flex-end;
   align-items: center;
   column-gap: 10px;
+  margin-bottom: 95px;
 }
 
 .item-cards-pagination li{
@@ -313,10 +312,6 @@ a {
   font-size: 18px;
   font-weight: 300;
   font-family: "cera_prolight";
-  transition: color 0.3s ease;
-}
-path{
-    transition: stroke 0.3s ease;
 }
 
 .item-cards-pagination li:hover{
@@ -324,9 +319,68 @@ path{
   background-color: #46a358;
   color: white;
   border: none;
-  stroke: white;
 }
 
 .item-cards-pagination li:hover path {
   stroke: white; 
+}
+
+.find-more-wrapper{
+  display: flex;
+  column-gap: 30px;
+  margin-bottom: 140px;
+  height: 250px;
+}
+
+.find-more-wrapper article{
+  /* background-color: #FBFBFB; */
+  border-left: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+  width: 585px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.find-more-img{
+  position: absolute;
+  bottom: 0px
+}
+
+.find-more-container{
+  text-align: right;
+  padding-right: 30px;
+  padding-bottom: 45px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.find-more-container h3{
+  margin-bottom: 9px;
+  padding-top: 37px;
+  font-weight: 900;
+  line-height: 24px;
+  font-size: 18px;
+  font-family: "cera_problack";
+  color: #3D3D3D;
+  text-transform: uppercase;
+}
+
+.find-more-container p{
+  margin-bottom: 25px;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "cera_proregular";
+  color: #727272;
+}
+
+.find-more-button{
+  padding: 10px 28px;
+  background-color: #46A358;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "cera_promedium";  
 }
