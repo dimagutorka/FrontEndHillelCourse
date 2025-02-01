@@ -101,6 +101,9 @@ a {
   column-gap: 50px;
 }
 
+.header-wrapper ul li {
+  position: relative;
+}
 
 .header-wrapper ul li a {
   color: #3d3d3d;
@@ -108,11 +111,11 @@ a {
   position: relative;
 }
 
-.header-wrapper ul li a:hover{
+.header-wrapper ul li a:hover {
   font-family: "cera_probold";
 }
 
-.header-wrapper ul li a::after {
+.header-wrapper ul li a::before {
   content: "";
   position: absolute;
   left: 0;
@@ -123,8 +126,57 @@ a {
   transition: width 0.3s ease-in-out;
 }
 
-.header-wrapper ul li a:hover::after {
+.header-wrapper ul li a:hover::before {
   width: 100%;
+}
+
+.header-wrapper ul li .dropdown a {
+  display: inline-block;
+  min-width: 188px;
+  padding: 8px 14px;
+  background-color: #edf6ee;
+  line-height: 16px;
+  color: #3d3d3d;
+  font-family: "cera_proregular";
+  transition: 0.3s;
+  position: relative;
+}
+
+.header-wrapper ul li .dropdown {
+  list-style: none;
+  display: none;
+  position: absolute;
+  left: -50px;
+  padding-top: 40px;
+}
+
+.header-wrapper ul li .dropdown a:hover {
+  color: white;
+  background-color: #1a712a;
+}
+
+.header-wrapper .dropdown-trigger:hover .dropdown {
+  display: block;
+}
+
+.header-wrapper ul .dropdown li:last-of-type a::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 7px;
+  height: 10px;
+  right: 17px;
+  top: 12px;
+  background-image: url("/hw8/images/arrow_black.svg");
+}
+
+.header-wrapper ul .dropdown a:hover::after {
+  background-image: url("/hw8/images/arrow_white.svg");
+  transform: rotate(180deg);
+}
+
+.header-wrapper ul li .dropdown a::before {
+  display: none;
 }
 
 .login-button {
@@ -237,63 +289,64 @@ a {
   gap: 70px 33px;
 }
 
-.discount{
+.discount {
   position: relative;
 }
 
-.discount::before{
+.discount::before {
   position: absolute;
   display: inline-block;
-  content: '13% OFF';
+  content: "13% OFF";
   padding: 7px 9px;
   bottom: 310px;
-  color:white;
+  color: white;
   background-color: #46a358;
 }
 
-.discount::after{
-  content: '$229.00';
+.discount::after {
+  content: "$229.00";
   text-decoration: line-through;
-  color: #A5A5A5;
+  color: #a5a5a5;
   padding-left: 15px;
 }
 
-.plant-cards-container article{
+.plant-cards-container article {
   border-top: 1px solid white;
 }
 
-.plant-cards-container article:hover{
+.plant-cards-container article:hover {
   border-top: 1px solid #46a358;
 }
 
-.plant-cards-container article{
+.plant-cards-container article {
   position: relative;
 }
 
-.plant-cards-container article:hover::after{
+.plant-cards-container article:hover::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   top: 74%;
   left: 25%;
-  background-image: url('/hw8/images/favorites_icon.svg'), url('/hw8/images/shoping_cart_icon.svg'), url('/hw8/images/zoom_icon.svg');
+  background-image: url("/hw8/images/favorites_icon.svg"),
+    url("/hw8/images/shoping_cart_icon.svg"), url("/hw8/images/zoom_icon.svg");
   background-repeat: no-repeat;
   background-position: 10px 10px, 50px 10px, 90px 10px;
-  
 }
 
-.plant-cards-container article:hover::before{
+.plant-cards-container article:hover::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   top: 71.5%;
   left: 22%;
-  background-image: url('/hw8/images/wgite_backgorund_for_icons.svg'), url('/hw8/images/wgite_backgorund_for_icons.svg'), url('/hw8/images/wgite_backgorund_for_icons.svg');
+  background-image: url("/hw8/images/wgite_backgorund_for_icons.svg"),
+    url("/hw8/images/wgite_backgorund_for_icons.svg"),
+    url("/hw8/images/wgite_backgorund_for_icons.svg");
   background-repeat: no-repeat;
   background-position: 10px 10px, 50px 10px, 90px 10px;
-
 }
 
 .plant-cards-wrapper {
@@ -308,7 +361,7 @@ a {
 }
 
 .plant-cards-navbar ul {
-    column-gap: 37px;
+  column-gap: 37px;
 }
 
 .plant-cards-navbar ul li::after {
@@ -317,7 +370,7 @@ a {
   border-bottom: 3px solid rgb(255, 255, 255);
   padding-bottom: 7px;
   width: 1%;
-  transition: width 0.3s ease-in-out
+  transition: width 0.3s ease-in-out;
 }
 
 .plant-cards-navbar ul li:hover::after {
@@ -332,12 +385,12 @@ a {
   font-family: "cera_probold";
 }
 
-.short-by img{
+.short-by img {
   max-width: 16px;
   max-height: 16px;
 }
 
-.short-by{
+.short-by {
   column-gap: 7px;
 }
 
@@ -404,7 +457,6 @@ a {
   /* height: 250px; */
   /* height: 250px; */
   /* height: 250px; */
-
 }
 
 .find-more-wrapper article {
