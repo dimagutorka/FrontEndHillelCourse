@@ -167,11 +167,11 @@ a {
   height: 10px;
   right: 17px;
   top: 12px;
-  background-image: url("/../images/arrow_black.svg");
+  background-image: url("../images/arrow_black.svg");
 }
 
 .header-wrapper ul .dropdown a:hover::after {
-  background-image: url("/../images/arrow_white.svg");
+  background-image: url("../images/arrow_white.svg");
   transform: rotate(180deg);
 }
 
@@ -346,7 +346,7 @@ a {
   left: 22%;
   background-image: url("../images/wgite_backgorund_for_icons.svg"),
     url("../images/wgite_backgorund_for_icons.svg"),
-    url("..//images/wgite_backgorund_for_icons.svg");
+    url("../images/wgite_backgorund_for_icons.svg");
   background-repeat: no-repeat;
   background-position: 10px 10px, 50px 10px, 90px 10px;
 }
