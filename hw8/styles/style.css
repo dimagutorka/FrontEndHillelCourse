@@ -250,7 +250,7 @@ a {
 }
 
 .sidebar-cetegories {
-  width: 310px;
+  min-width: 310px;
   padding-bottom: 380px;
   background-color: #fbfbfb;
   padding-top: 14px;
@@ -284,7 +284,7 @@ a {
 .plant-cards-container {
   display: flex;
   flex-wrap: wrap;
-  width: 840px;
+  max-width: 840px;
   justify-content: space-between;
   gap: 70px 33px;
 }
@@ -396,8 +396,8 @@ a {
 
 .plant-cards-container .item-img {
   margin-bottom: 12px;
-  height: 300px;
-  width: 258px;
+  min-height: 300px;
+  min-width: 250px;
 }
 
 .plant-cards-container .item-name {
@@ -450,13 +450,6 @@ a {
   column-gap: 30px;
   margin-bottom: 140px;
   height: 250px;
-  /* height: 250px; */
-  /* height: 250px; */
-  /* height: 250px; */
-  /* height: 250px; */
-  /* height: 250px; */
-  /* height: 250px; */
-  /* height: 250px; */
 }
 
 .find-more-wrapper article {
