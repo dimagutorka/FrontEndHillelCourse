@@ -329,8 +329,10 @@ a {
   height: 100%;
   top: 74%;
   left: 25%;
-  background-image: url("/hw8/images/favorites_icon.svg"),
-    url("/hw8/images/shoping_cart_icon.svg"), url("/hw8/images/zoom_icon.svg");
+  background-image: 
+  url("/images/favorites_icon.svg"),
+    url("/images/zoom_icon.svg"), 
+    url("/images/shoping_cart_icon.svg");
   background-repeat: no-repeat;
   background-position: 10px 10px, 50px 10px, 90px 10px;
 }
@@ -342,9 +344,9 @@ a {
   height: 100%;
   top: 71.5%;
   left: 22%;
-  background-image: url("/hw8/images/wgite_backgorund_for_icons.svg"),
-    url("/hw8/images/wgite_backgorund_for_icons.svg"),
-    url("/hw8/images/wgite_backgorund_for_icons.svg");
+  background-image: url("/images/wgite_backgorund_for_icons.svg"),
+    url("/images/wgite_backgorund_for_icons.svg"),
+    url("/images/wgite_backgorund_for_icons.svg");
   background-repeat: no-repeat;
   background-position: 10px 10px, 50px 10px, 90px 10px;
 }
