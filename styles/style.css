@@ -330,9 +330,9 @@ a {
   top: 74%;
   left: 25%;
   background-image: 
-  url("/images/favorites_icon.svg"),
-    url("/images/zoom_icon.svg"), 
-    url("/images/shoping_cart_icon.svg");
+  url("images/favorites_icon.svg"),
+    url("..//images/zoom_icon.svg"), 
+    url("/FrontEndHillelCourse/images/shoping_cart_icon.svg");
   background-repeat: no-repeat;
   background-position: 10px 10px, 50px 10px, 90px 10px;
 }
