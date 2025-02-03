@@ -589,8 +589,6 @@ a {
   visibility: hidden;
 }
 
-
 .plant-cards-container article:hover .icons-bar{
   visibility: visible;
-
 }
