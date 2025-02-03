@@ -581,3 +581,25 @@ a {
   right: -15px;
   top: 5px;
 }
+<<<<<<< Updated upstream:hw8/styles/style.css
+=======
+
+.post_link:hover{
+  color: green;
+  font-size: 14px ;
+}
+
+.icons-bar{
+  visibility: hidden;
+}
+
+
+.plant-cards-container article:hover .icons-bar{
+  visibility: visible;
+
+}
+
+
+test
+test
+>>>>>>> Stashed changes:styles/style.css
