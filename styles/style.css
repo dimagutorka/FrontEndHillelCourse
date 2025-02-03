@@ -160,6 +160,7 @@ a {
 }
 
 .header-wrapper ul .dropdown li:last-of-type a::after {
+  background-image: url("../images/arrow_black.svg");
   position: absolute;
   display: inline-block;
   content: "";
@@ -167,7 +168,6 @@ a {
   height: 10px;
   right: 17px;
   top: 12px;
-  background-image: url("../images/arrow_black.svg");
 }
 
 .header-wrapper ul .dropdown a:hover::after {
@@ -322,7 +322,7 @@ a {
   position: relative;
 }
 
-.plant-cards-container article:hover::after {
+/* .plant-cards-container article:hover::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -331,25 +331,26 @@ a {
   left: 25%;
   background-image: 
   url("../images/favorites_icon.svg"),
-    url("../images/zoom_icon.svg"), 
-    url("../images/shoping_cart_icon.svg");
+  url("../images/zoom_icon.svg"), 
+  url("../images/shoping_cart_icon.svg");
   background-repeat: no-repeat;
   background-position: 10px 10px, 50px 10px, 90px 10px;
-}
+} */
 
-.plant-cards-container article:hover::before {
+/* .plant-cards-container article:hover::before {
   position: absolute;
   content: "";
   width: 100%;
   height: 100%;
   top: 71.5%;
   left: 22%;
-  background-image: url("../images/wgite_backgorund_for_icons.svg"),
-    url("../images/wgite_backgorund_for_icons.svg"),
-    url("../images/wgite_backgorund_for_icons.svg");
+  background-image: 
+  url("../images/wgite_backgorund_for_icons.svg"),
+  url("../images/wgite_backgorund_for_icons.svg"),
+  url("../images/wgite_backgorund_for_icons.svg");
   background-repeat: no-repeat;
   background-position: 10px 10px, 50px 10px, 90px 10px;
-}
+} */
 
 .plant-cards-wrapper {
   color: #3d3d3d;
@@ -424,6 +425,7 @@ a {
 }
 
 .item-cards-pagination li {
+  font-family: "cera_prolight";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -433,14 +435,13 @@ a {
   border-radius: 4px;
   font-size: 18px;
   font-weight: 300;
-  font-family: "cera_prolight";
 }
 
 .item-cards-pagination li:hover {
+  border: none;
+  color: white;
   font-weight: 700;
   background-color: #46a358;
-  color: white;
-  border: none;
 }
 
 .item-cards-pagination li:hover path {
@@ -456,10 +457,10 @@ a {
 
 .find-more-wrapper article {
   background-color: #fbfbfb;
-  width: 585px;
   display: flex;
   justify-content: space-between;
   position: relative;
+  width: 585px;
 }
 
 .find-more-img {
@@ -469,36 +470,36 @@ a {
 
 .find-more-container {
   text-align: right;
+  position: absolute;
   padding-right: 30px;
   padding-bottom: 45px;
-  position: absolute;
   top: 0px;
   right: 0px;
 }
 
 .find-more-container h3 {
+  color: #3d3d3d;
   margin-bottom: 9px;
   padding-top: 37px;
   font-weight: 900;
   line-height: 24px;
   font-size: 18px;
   font-family: "cera_problack";
-  color: #3d3d3d;
   text-transform: uppercase;
 }
 
 .find-more-container p {
+  color: #727272;
   margin-bottom: 25px;
   line-height: 24px;
   font-size: 14px;
-  color: #727272;
 }
 
 .find-more-button {
-  padding: 10px 28px;
   background-color: #46a358;
-  border-radius: 6px;
   color: white;
+  padding: 10px 28px;
+  border-radius: 6px;
   font-size: 14px;
   line-height: 20px;
   font-family: "cera_promedium";
@@ -510,13 +511,13 @@ a {
 }
 
 .our-blog-posts {
+  color: #3d3d3d;
   text-transform: capitalize;
+  text-align: center;
+  font-family: "cera_probold";
   font-weight: 700;
   font-size: 30px;
   line-height: 16px;
-  color: #3d3d3d;
-  text-align: center;
-  font-family: "cera_probold";
   margin-bottom: 15px;
 }
 
@@ -543,9 +544,9 @@ a {
 }
 
 .time_to_read span::after {
-  content: "";
   display: inline-block;
   border-left: 1px solid #46a358;
+  content: "";
   height: 9px;
 }
 
@@ -554,27 +555,42 @@ a {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  color: #3d3d3d;
   margin-bottom: 4px;
+  color: #3d3d3d;
 }
 
 .post_description {
   margin-bottom: 9px;
   line-height: 22px;
-  color: #727272;
   font-size: 14px;
+  color: #727272;
 }
 
 .post_link {
   font: "cera_promedium";
-  color: #3d3d3d;
+  position: relative;
   font-size: 14px;
   line-height: 16px;
-  position: relative;
+  color: #3d3d3d;
 }
 
 .post_link img {
   position: absolute;
   right: -15px;
   top: 5px;
+}
+
+.post_link:hover{
+  color: green;
+  font-size: 14px ;
+}
+
+.icons-bar{
+  visibility: hidden;
+}
+
+
+.plant-cards-container article:hover .icons-bar{
+  visibility: visible;
+
 }
