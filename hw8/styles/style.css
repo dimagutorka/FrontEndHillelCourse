@@ -115,7 +115,7 @@ a {
   font-family: "cera_probold";
 }
 
-.header-wrapper ul li a::before {
+.parent-nav-item a::before {
   content: "";
   position: absolute;
   left: 0;
@@ -126,7 +126,7 @@ a {
   transition: width 0.3s ease-in-out;
 }
 
-.header-wrapper ul li a:hover::before {
+.parent-nav-item a:hover::before {
   width: 100%;
 }
 
@@ -144,8 +144,7 @@ a {
 }
 
 .header-wrapper ul li .dropdown {
-  list-style: none;
-  display: none;
+  visibility: hidden;
   position: absolute;
   left: -50px;
   padding-top: 40px;
@@ -154,31 +153,29 @@ a {
 .header-wrapper ul li .dropdown a:hover {
   color: white;
   background-color: #1a712a;
-
 }
 
 .header-wrapper .dropdown-trigger:hover .dropdown {
-  display: block;
+  visibility: visible;
 }
 
 .header-wrapper ul .dropdown li:last-of-type a::after {
+  background-image: url('../images/dropdown_black_arrow.svg');
   position: absolute;
-  display: inline-block;
   content: "";
   width: 7px;
   height: 10px;
   right: 17px;
   top: 12px;
-  background-image: url("/images/arrow-right1.svg");
 }
 
-.header-wrapper ul .dropdown a:hover::after {
-  background-image: url("/images/arrow_white.svg");
+.header-wrapper ul .dropdown li:last-of-type a:hover::before{
+  width: 0px;
+}
+
+.header-wrapper ul .dropdown li:last-of-type a:hover::after {
+  background-image: url('../images/dropdown_white_arrow.svg');
   transform: rotate(180deg);
-}
-
-.header-wrapper ul li .dropdown a::before {
-  display: none;
 }
 
 .login-button {
@@ -336,11 +333,15 @@ position: absolute;
   left: 54px;
 }
 
-
 .white_background_icons .icon_3{
 position: absolute;
-  bottom: 12px;
+bottom: 12px;
 left: 98px;
+}
+
+
+.color-change path{
+  transition: fill 0.3s ease-in 0.1s
 }
 
 .test:hover .white_background_icons{
@@ -354,7 +355,6 @@ left: 98px;
 .plant-cards-container article:hover .white_background_icons{
   display: inline-block;
 }
-
 
 .white_background_icons{
   position: absolute;
