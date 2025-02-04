@@ -186,11 +186,11 @@ a {
   background-color: #46a358;
   color: white;
   border-radius: 6px;
-  display: flex;
   column-gap: 5px;
+  line-height: 20px;
+  display: flex;
   align-items: center;
   font-family: "cera_promedium";
-  line-height: 20px;
 }
 
 .banner-content-wrapper {
@@ -230,8 +230,8 @@ a {
 .under-motto-text {
   margin-bottom: 44px;
   line-height: 24px;
-  color: #727272;
   font-size: 14px;
+  color: #727272;
 }
 
 .shop-now-button {
@@ -324,34 +324,47 @@ a {
   position: relative;
 }
 
-.plant-cards-container article:hover::after {
+.white_background_icons .icon_1{
   position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 74%;
-  left: 25%;
-  background-image:  
-    url("/images/favorites_icon.svg"),
-    url("/images/shoping_cart_icon.svg"), 
-    url("/images/zoom_icon.svg");
-  background-repeat: no-repeat;
-  background-position: 10px 10px, 50px 10px, 90px 10px;
+  bottom: 13px;
+  left: 10px;
 }
 
-.plant-cards-container article:hover::before {
+.white_background_icons .icon_2{
+position: absolute;
+  bottom: 12px;
+  left: 54px;
+}
+
+
+.white_background_icons .icon_3{
+position: absolute;
+  bottom: 12px;
+left: 98px;
+}
+
+.test:hover .white_background_icons{
+  display: inline-block;
+}
+
+.test:hover .color-change path{
+  fill: #46A358;
+}
+
+.plant-cards-container article:hover .white_background_icons{
+  display: inline-block;
+}
+
+
+.white_background_icons{
   position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 71.5%;
-  left: 22%;
-  background-image: 
-    url("/images/wgite_backgorund_for_icons.svg"),
-    url("/images/wgite_backgorund_for_icons.svg"),
-    url("/images/wgite_backgorund_for_icons.svg");
-  background-repeat: no-repeat;
-  background-position: 10px 10px, 50px 10px, 90px 10px;
+  display:  none;
+  top: 260px;
+  left: 25%;
+}
+
+.white_background_icons img{
+  margin-right: 5px;
 }
 
 .plant-cards-wrapper {
@@ -446,6 +459,11 @@ a {
   border: none;
 }
 
+.item-cards-pagination li:hover a{
+  color: white;
+}
+
+
 .item-cards-pagination li:hover path {
   stroke: white;
 }
@@ -459,7 +477,6 @@ a {
 
 .find-more-wrapper article {
   background-color: #fbfbfb;
-  width: 585px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -474,9 +491,8 @@ a {
   text-align: right;
   padding-right: 30px;
   padding-bottom: 45px;
-  position: absolute;
-  top: 0px;
-  right: 0px;
+  padding-left: 260px;
+
 }
 
 .find-more-container h3 {
@@ -537,7 +553,7 @@ a {
 }
 
 .time_to_read {
-  font: "cera_promedium";
+  font-family: "cera_promedium";
   margin-bottom: 4px;
   font-size: 14px;
   line-height: 16px;
@@ -568,8 +584,8 @@ a {
   font-size: 14px;
 }
 
-.post_link {
-  font: "cera_promedium";
+.post_link{
+  font-family: "cera_promedium";
   color: #3d3d3d;
   font-size: 14px;
   line-height: 16px;
@@ -582,17 +598,39 @@ a {
   top: 5px;
 }
 
+.post_link::after{
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-image: url('../images/arrow_right_black.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5px;
+  right: -17px;
+}
+
+
+.post_link:hover::after{
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url('../images/arrow_right_green.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5px;
+  right: -17px;
+}
+
 .post_link:hover{
-  color: green;
-  font-size: 14px ;
+  color: #46A358;
 }
 
 .icons-bar{
   visibility: hidden;
 }
 
-
 .plant-cards-container article:hover .icons-bar{
   visibility: visible;
-
 }
