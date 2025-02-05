@@ -456,7 +456,7 @@ a {
   font-family: "cera_prolight";
 }
 
-.item-cards-pagination li a:visited {
+.item-cards-pagination li a {
   color: black;
 }
 
@@ -467,7 +467,7 @@ a {
   border: none;
 }
 
-.item-cards-pagination li:hover {
+.item-cards-pagination li:hover a{
   color: white;
 }
 
