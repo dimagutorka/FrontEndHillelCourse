@@ -7,47 +7,46 @@ body {
 }
 
 .calendar {
-  background-color: rgb(215, 250, 140);
+  background-color: rgb(217, 243, 224);
   display: grid;
   grid-template-areas:
-    "header"
-    "body";
+    "aside header"
+    "aside body";
 }
 
 .calendar-header {
   grid-area: header;
   display: grid;
-  grid-auto-flow: row;
-  grid-template-columns: repeat(7, 1fr);
+  /* grid-auto-flow: row; */
+  grid-template-columns: repeat(5, 230px);
+  grid-template-rows: repeat(1, 80px);
   column-gap: 10px;
-  padding-bottom: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.calendar-aside {
+  grid-area: aside;
+  display: grid;
+  grid-template-columns: repeat(1, 300px);
+  grid-template-rows: repeat(24, 45px);
+  grid-row-start: 2;
+  justify-items: center;
 }
 
 .calendar-body {
   display: grid;
   grid-area: body;
-  grid-template-rows: repeat(24, 1fr);
-  grid-auto-flow: column;
+  grid-template-columns: repeat(5, 230px);
+  grid-template-rows: repeat(24, 45px);
+  /* grid-auto-flow: column; */
   column-gap: 10px;
   position: relative;
+  border: 1px solid red;
 }
-
-.events-container {
-    column-gap: 10px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(24, 1fr);
-    pointer-events: none; 
-}
-
-
-
 
 .day-label {
-  width: 100px;
+  width: 200px;
   height: 50px;
   background-color: rgb(241, 49, 49);
   border: 1px solid black;
@@ -60,11 +59,23 @@ body {
   border: 1px solid black;
 }
 
+.events-container {
+  column-gap: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 230px);
+  grid-template-rows: repeat(24, 45px);
+  grid-auto-flow: column;
+  pointer-events: none;
+}
+
 .event {
   background-color: rgba(24, 113, 186, 0.8);
   text-align: center;
-    border-radius: 15px;}
-
+  border-radius: 15px;
+}
 
 .event1 {
   grid-column: 4;
@@ -74,11 +85,10 @@ body {
 .event2 {
   grid-column: 1;
   grid-row: 13 / span 3;
-    background-color: rgba(29, 109, 175, 0.8);
-
+  background-color: rgba(29, 109, 175, 0.8);
 }
 
 .event3 {
-  grid-column: 7;
+  grid-column: 3;
   grid-row: 9 / span 2;
 }
