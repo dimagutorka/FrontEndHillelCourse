@@ -1,0 +1,55 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Боковое меню фиксированное */
+    grid-template-rows: 60px 1fr; /* Верхняя панель 60px */
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar content";
+    height: 100vh;
+}
+
+/* Боковое меню */
+.sidebar {
+    grid-area: sidebar;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+/* Верхняя панель */
+.header {
+    grid-area: header;
+    background: #34495e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+/* Контент (виджеты) */
+.content {
+    grid-area: content;
+    padding: 20px;
+}
+
+/* Сетка виджетов */
+.widgets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Виджеты */
+.widget {
+    background: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Расширенный виджет */
+.widget.large {
+    grid-column: span 2;
+}
